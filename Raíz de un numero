@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+
+using namespace std;
+
+int main()
+{
+    double x;
+    double raiz = sqrt(7.0);
+    cout<<raiz<<endl;
+    cin>>x;
+    
+    double aprox = ((1.0/2.0)*(x+(7.0/x)));
+    double porError = fabs(raiz-aprox);
+    cout<<aprox<<endl;
+    while(porError > 0.0001)
+    {
+        aprox = ((1.0/2.0)*(aprox+(7.0/aprox)));
+        cout<<aprox<<endl;
+        porError = fabs(raiz-aprox);
+        
+    }
+    porError = fabs((raiz-aprox)/raiz)*100.0;
+    cout<<porError<<endl;
+    
+    //precision de 10e-8, trisecion
+    
+    //problema de fisica
+    
+    //27 de julio
+}
