@@ -106,6 +106,7 @@ tetraseccion<-function(a,b,c,d){
 
 #pruebas
 coeficiente = biseccion(1,100)
+coeficiente
 coeficiente = triseccion(1,50,100)
-raiz = tetraseccion(1,3,6,12)
+coeficiente
 f(raiz)
