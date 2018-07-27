@@ -11,7 +11,7 @@ biseccion<-function(a,b){
   i = 0;
   while(abs(f(k))>=(1.e-8)){
     
-    i = i +1;
+    
     if(f(a)*f(k)<0)
     {
       b=k;
@@ -69,7 +69,7 @@ triseccion<-function(a,b,c){
         b=(c+k)/2;
       }
     }
-    Sys.sleep(0.5)
+    
     text(k,0,i,cex=0.8,col="red")
     
       k <- ((a+b+c)/3);
@@ -109,4 +109,4 @@ coeficiente = biseccion(1,100)
 coeficiente
 coeficiente = triseccion(1,50,100)
 coeficiente
-f(raiz)
+f(coeficiente)
