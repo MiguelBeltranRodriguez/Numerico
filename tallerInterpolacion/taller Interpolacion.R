@@ -43,7 +43,7 @@ curve(Ajuste_Polinomio,add=T,from =200,to =500)
 
 lagrange = function(x,y,a){
   n = length(x)
-  if(a < min(x) || max(x) < a) stop("No está interpolando")
+  if(a < min(x) || max(x) < a) stop("No estÃ¡ interpolando")
   X = matrix(rep(x, times=n), n, n, byrow=T)
   mN = a - X; diag(mN) = 1
   mD = X - t(X); diag(mD) = 1
@@ -64,3 +64,4 @@ plot(xs, Resultados, type="overplotted",
 #-----------------------------------------------------------------------------------------------
 plot(x,y,type="l",col="blue",lwd=3, main="funcion", xlab="", ylab="", las=1, col.axis="red")
 
+#Polinomio = -4.20 + 0.44*x + 9.00*x^2 + 29.8*x^3
