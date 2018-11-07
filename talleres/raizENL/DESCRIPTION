@@ -1,0 +1,12 @@
+Package: raizENL
+Type: Package
+Title: Raiz ecuaciones no lineales
+Version: 1.0
+Author: Miguel Beltran, Sebastian Triana
+Maintainer: <miguel_beltran@javeriana.edu.co>
+Description: Paquete sobre metodos que encuentran la raiz de una ecuacion no lineal
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Imports: Deriv
+RoxygenNote: 6.1.0
